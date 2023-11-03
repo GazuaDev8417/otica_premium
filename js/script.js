@@ -1,5 +1,6 @@
 let searchForm = document.querySelector('.header .search-form');
 let searchResult = document.querySelector('.search-result')
+let navbar = document.querySelector('.header .navbar');
 
 document.querySelector('#search-btn').onclick = () =>{
     searchForm.classList.toggle('active');
@@ -7,7 +8,6 @@ document.querySelector('#search-btn').onclick = () =>{
     searchResult.classList.toggle('active')
 }
 
-let navbar = document.querySelector('.header .navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
     navbar.classList.toggle('active');
