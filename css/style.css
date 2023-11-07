@@ -808,16 +808,7 @@ section {
   padding: 2rem;
   border-radius: .5rem;
   border: 0.2rem solid #333;
-}
-
-.shopping-cart .cart-total h3 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  color: #333;
-}
-
-.shopping-cart .cart-total h3 span {
-  color: #723E05;
+  font-size: 1.5rem;
 }
 
 .footer .box-container {
