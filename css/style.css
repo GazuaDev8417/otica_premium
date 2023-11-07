@@ -24,8 +24,8 @@ section {
 }
 
 .heading {
-  text-align: center;
-  background: #723E05;
+  text-align: center;  
+  background: #734306;
 }
 
 .heading h1 {
@@ -80,7 +80,6 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #fff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   display: -webkit-box;
@@ -89,7 +88,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 9%;
+  padding: 1rem 9%;
 }
 
 .header .logo {
@@ -97,6 +96,9 @@ section {
   color: #333;
   font-weight: bolder;
   margin-right: auto;
+  background: linear-gradient(to right, #FBF685, #5D2D00);
+  border-radius: 20px;
+  padding: 0 10px;
 }
 
 .header .navbar ul {
@@ -115,12 +117,14 @@ section {
 .header .navbar ul li a {
   font-size: 1.7rem;
   color: #666;
-  padding: 2rem;
+  padding: 1rem;
   display: block;
 }
 
 .header .navbar ul li a:hover {
-  background: #eee;
+  background: linear-gradient(to right, #FBF685, #5D2D00);
+  border-radius: 15px;
+  color: #fff;
 }
 
 .header .navbar ul li ul {
@@ -167,9 +171,21 @@ section {
           clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
+.search-result{
+  padding: 0 10px;
+  max-height: 20vh;
+  overflow: auto;
+  display: none;
+}
+
 .header .search-form.active {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.search-result.active{
+  display: block;
+  margin-top: 20vh;
 }
 
 .header .search-form input {
@@ -257,6 +273,17 @@ section {
 .home .slide .content .btn {
   -webkit-animation: fadeIn .4s linear .6s backwards;
           animation: fadeIn .4s linear .6s backwards;
+}
+
+.home .slide .content .btn{
+  border: none;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.home .slide .content .btn:hover{
+  background-color: #fff;
+  color: green;
 }
 
 .home #next-slide,
@@ -897,10 +924,21 @@ section {
     top: 99%;
     left: 0;
     right: 0;
-    background: #fff;
+    background: linear-gradient(to right, #FBF685, #5D2D00);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
+
+  .header .navbar ul li a{
+    color: gray;
+    margin: 1rem 0;
+  }
+
+  .header .navbar ul li:hover a{
+    box-shadow: 0 0 10px;
+    color: #666;
+  }
+
   .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);

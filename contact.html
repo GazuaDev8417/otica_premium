@@ -63,10 +63,20 @@
     <h1 class="title"> Nos visite </h1>
 
     <div class="row">
-
         <form action="">
+            <div class="leave-msg-subtitle">
+                Caso não consiga falar conosco no momento pelo
+                <a href="http://api.whatsapp.com/send?phone=557186329653" target="_blank" 
+                style="color: green;">Whatsapp</a>,
+                envie nos uma mensagem e te daremos um feedback
+            </div>            
             <input type="text" placeholder="Seu nome" class="box">
-            <input type="number" placeholder="Número" class="box">
+            <input
+                onkeypress="return event.charCode > 47 && event.charCode < 58" 
+                maxlength="11"
+                type="text"
+                placeholder="Número"
+                class="box">
             <input type="email" placeholder="E-mail" class="box">
             <textarea name="" placeholder="Deixe aqui sua mensagem" id="" cols="30" rows="10"></textarea>
             <input type="submit" value="Enviar" class="btn">
